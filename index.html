@@ -46,7 +46,7 @@ rel="stylesheet">
         <section class="promo-section">
             <div class="conteiner">
             <h1 class="title-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button class="button-first-page" type="button" >Заказать услугу</button>
+            <button class="button-first-page" type="button" data-modal-open>Заказать услугу</button>
         
         </section>
 
@@ -411,9 +411,16 @@ rel="stylesheet">
         </div>
         </footer>
 
-<div class="backdrop">
-    <div class="modal"></div>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="close-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
 </div>
 
+<script src="./js/modal.js"></script>
 </body>
 </html>
